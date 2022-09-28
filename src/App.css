@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.activity-main{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 50px;
+  gap: 24px;
+  background-color: rgba(128, 128, 128, 0.405);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards-item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width:575px) {
+  .activity-main{
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards-item{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 576px) {
+  .cards-item{
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 992px) {
+  .cards-item{
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+import ActivityCard from "./Components/ActivityCard/ActivityCard";
+import CardItem from "./Components/CardItem/CardItem";
 
 function App() {
+  const [cards, setCards] = useState([]);
+  useEffect(()=>{
+    fetch('activity.json')
+    .then(res => res.json())
+    .then(data => setCards(data))
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="activity-main">
+      <div className="activity-card">
+        <ActivityCard></ActivityCard>
+        <div className="cards-item">
+        {
+          cards.map(card => <CardItem key={card.id} card={card}></CardItem>)
+        }
+        </div>
+      </div>
+      <div className="activity-calc">
+        <h1>Activity Calc</h1>
+      </div>
+    </section>
   );
 }
 

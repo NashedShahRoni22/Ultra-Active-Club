@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav-img img{
+    height: 60px;
+    width: 60px;
+}
+.nav-tag p{
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+}

@@ -1,0 +1,20 @@
+.card-item{
+    border: 2px solid orangered;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.card-item img{
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+}
+.add-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: orangered;
+    border: 0;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}

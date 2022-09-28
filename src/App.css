@@ -16,6 +16,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
 }
+.btn-holder{
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+  border: 2px solid orangered;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.time-btn{
+  padding: 8px;
+  border: 1px solid orangered;
+}
 @media only screen and (max-width:575px) {
   .activity-main{
     grid-template-columns: 1fr 1fr;
@@ -28,9 +40,6 @@
   .cards-item{
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .activity-main{
-    grid-template-columns: 3fr 2fr;
-  } */
 }
 @media only screen and (min-width: 992px) {
   .cards-item{

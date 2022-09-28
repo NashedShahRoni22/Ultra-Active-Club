@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import ActivityCard from "./Components/ActivityCard/ActivityCard";
 import CardItem from "./Components/CardItem/CardItem";
+import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
+import PhysicalInfo from "./Components/PhysicalInfo/PhysicalInfo";
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -21,7 +23,8 @@ function App() {
         </div>
       </div>
       <div className="activity-calc">
-        <h1>Activity Calc</h1>
+        <PersonalInfo></PersonalInfo>
+        <PhysicalInfo></PhysicalInfo>
       </div>
     </section>
   );

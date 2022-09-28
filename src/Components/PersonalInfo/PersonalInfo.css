@@ -1,0 +1,10 @@
+.info-card{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info-img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}

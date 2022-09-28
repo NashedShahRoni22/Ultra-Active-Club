@@ -12,7 +12,7 @@
     "name": "CSS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quo adipisci autem odit enim provident.",
     "categorey": "Style Sheet",
-    "time": "1",
+    "time": "1.5",
     "picture": "https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "BootStrap",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quo adipisci autem odit enim provident.",
     "categorey": "CSS Framework",
-    "time": "1",
+    "time": "2",
     "picture": "https://avatars.githubusercontent.com/u/2918581?s=280&v=4"
   },
   {
@@ -28,7 +28,7 @@
     "name": "JavaScript",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quo adipisci autem odit enim provident.",
     "categorey": "Dynamic Language",
-    "time": "2",
+    "time": "3",
     "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Mongo DB",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quo adipisci autem odit enim provident.",
     "categorey": "Data Base",
-    "time": "3",
+    "time": "2.5",
     "picture": "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"
   }
 ]

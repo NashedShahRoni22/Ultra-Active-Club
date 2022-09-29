@@ -15,6 +15,10 @@ function App() {
   const [cards, setCards] = useState([]);
   const [cart, setCart] = useState([]);
   const [breakTime, setBreakTime] = useState(0);
+  useEffect(()=>{
+    const storedData = localStorage.getItem('break-time');
+    setBreakTime(storedData);
+  },[])
 
   useEffect(() => {
     fetch("activity.json")
@@ -27,8 +31,8 @@ function App() {
     setCart(newCart);
   };
 
-  const addBreakTime = (breaktime) => {
-    setBreakTime(breaktime);
+  const addBreakTime = (breakTime) => {
+    setBreakTime(breakTime);
     localStorage.setItem("break-time", breakTime);
   };
 

@@ -15,7 +15,7 @@ const ExersiseDetails = ({cart,breakTime}) => {
       </div>
       <div className="break">
         <p>Break Time</p>
-        <p>{breakTime} sec</p>
+        <p><strong>{breakTime} sec</strong></p>
       </div>
     </section>
   );

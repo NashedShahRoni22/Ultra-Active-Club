@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import ActivityCard from "./Components/ActivityCard/ActivityCard";
+import BreakTime from "./Components/BreakTime/BreakTime";
 import CardItem from "./Components/CardItem/CardItem";
 import ExersiseDetails from "./Components/ExersiseDetails/ExersiseDetails";
 import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
@@ -24,10 +25,14 @@ function App() {
 
   const addBreakTime = (breaktime) => {
     setBreakTime(breaktime);
+    localStorage.setItem('break-time',breakTime);
   };
 
   return (
     <section className="activity-main">
+
+
+
       <div className="activity-card">
         <ActivityCard></ActivityCard>
         <div className="cards-item">
@@ -37,32 +42,11 @@ function App() {
         </div>
       </div>
 
-      <div className="activity-calc">
 
+
+      <div className="activity-calc">
         <PersonalInfo></PersonalInfo>
-        <div>
-          <h4>Add a break</h4>
-          <div className="btn-holder">
-            <button className="time-btn" onClick={() => addBreakTime(10)}>
-              10s
-            </button>
-            <button className="time-btn" onClick={() => addBreakTime(20)}>
-              20s
-            </button>
-            <button className="time-btn" onClick={() => addBreakTime(30)}>
-              30s
-            </button>
-            <button className="time-btn" onClick={() => addBreakTime(40)}>
-              40s
-            </button>
-            <button className="time-btn" onClick={() => addBreakTime(50)}>
-              50s
-            </button>
-            <button className="time-btn" onClick={() => addBreakTime(60)}>
-              60s
-            </button>
-          </div>
-        </div>
+        <BreakTime addBreakTime={addBreakTime}></BreakTime>
         <PhysicalInfo></PhysicalInfo>
         <ExersiseDetails cart={cart} breakTime={breakTime}></ExersiseDetails>
       </div>

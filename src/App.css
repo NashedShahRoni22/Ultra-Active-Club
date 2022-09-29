@@ -19,19 +19,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
 }
-.btn-holder{
-  display: flex;
-  padding: 16px;
-  justify-content: space-between;
-  gap: 8px;
-  border: 2px solid #7410f6;
-  border-radius: 8px;
-  margin: 8px 0;
-}
-.time-btn{
-  padding: 8px;
-  border: 1px solid #7410f6;
-}
 @media only screen and (max-width:575px) {
   .activity-main{
     grid-template-columns: 1fr;

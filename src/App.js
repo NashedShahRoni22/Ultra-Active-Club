@@ -8,6 +8,7 @@ import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 import PhysicalInfo from "./Components/PhysicalInfo/PhysicalInfo";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blog from "./Components/Blog/Blog";
 
 // toast.configure();
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <section className="activity-main">
+
       <div className="activity-card">
         <ActivityCard></ActivityCard>
         <div className="cards-item">
@@ -44,6 +46,7 @@ function App() {
             <CardItem key={card.id} card={card} addBtn={addBtn}></CardItem>
           ))}
         </div>
+        <Blog></Blog>
       </div>
 
       <div className="activity-calc">

@@ -6,6 +6,8 @@ const ExersiseDetails = ({cart,breakTime}) => {
   for(const item of cart){
     totalTime = totalTime + parseFloat(item.time);
   }
+  const storedData = localStorage.getItem('break-time');
+  
   return (
     <section>
       <h4>Exersise Details</h4>
@@ -16,6 +18,7 @@ const ExersiseDetails = ({cart,breakTime}) => {
       <div className="break">
         <p>Break Time</p>
         <p><strong>{breakTime} sec</strong></p>
+        <p><strong>{storedData} sec</strong></p>
       </div>
     </section>
   );

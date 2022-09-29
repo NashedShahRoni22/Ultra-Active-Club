@@ -6,8 +6,8 @@ import CardItem from "./Components/CardItem/CardItem";
 import ExersiseDetails from "./Components/ExersiseDetails/ExersiseDetails";
 import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 import PhysicalInfo from "./Components/PhysicalInfo/PhysicalInfo";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Blog from "./Components/Blog/Blog";
 
 // toast.configure();
@@ -33,12 +33,11 @@ function App() {
   };
 
   const notify = () => {
-    toast("Basic Notification!");
+    toast("Congratulations!");
   };
 
   return (
     <section className="activity-main">
-
       <div className="activity-card">
         <ActivityCard></ActivityCard>
         <div className="cards-item">
@@ -46,7 +45,6 @@ function App() {
             <CardItem key={card.id} card={card} addBtn={addBtn}></CardItem>
           ))}
         </div>
-        <Blog></Blog>
       </div>
 
       <div className="activity-calc">
@@ -57,7 +55,18 @@ function App() {
         <button className="toast-btn" onClick={notify}>
           Toast Button
         </button>
-        <ToastContainer />
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <Blog></Blog>
       </div>
     </section>
   );

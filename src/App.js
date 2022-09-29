@@ -6,7 +6,10 @@ import CardItem from "./Components/CardItem/CardItem";
 import ExersiseDetails from "./Components/ExersiseDetails/ExersiseDetails";
 import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 import PhysicalInfo from "./Components/PhysicalInfo/PhysicalInfo";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+// toast.configure();
 function App() {
   const [cards, setCards] = useState([]);
   const [cart, setCart] = useState([]);
@@ -25,14 +28,15 @@ function App() {
 
   const addBreakTime = (breaktime) => {
     setBreakTime(breaktime);
-    localStorage.setItem('break-time',breakTime);
+    localStorage.setItem("break-time", breakTime);
+  };
+
+  const notify = () => {
+    toast("Basic Notification!");
   };
 
   return (
     <section className="activity-main">
-
-
-
       <div className="activity-card">
         <ActivityCard></ActivityCard>
         <div className="cards-item">
@@ -42,13 +46,15 @@ function App() {
         </div>
       </div>
 
-
-
       <div className="activity-calc">
         <PersonalInfo></PersonalInfo>
         <BreakTime addBreakTime={addBreakTime}></BreakTime>
         <PhysicalInfo></PhysicalInfo>
         <ExersiseDetails cart={cart} breakTime={breakTime}></ExersiseDetails>
+        <button className="toast-btn" onClick={notify}>
+          Toast Button
+        </button>
+        <ToastContainer />
       </div>
     </section>
   );

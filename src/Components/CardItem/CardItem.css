@@ -1,5 +1,5 @@
 .card-item{
-    border: 2px solid orangered;
+    border: 2px solid #7510F6;
     padding: 8px;
     border-radius: 8px;
     background-color: #fff;
@@ -12,9 +12,13 @@
 .add-btn{
     width: 100%;
     padding: 10px 0;
-    background-color: orangered;
+    background-color: #7510F6;
     border: 0;
     color: white;
     border-radius: 8px;
     font-weight: bold;
+}
+.add-btn:hover{
+    background-color: orangered;
+    cursor: pointer;
 }

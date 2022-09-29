@@ -1,7 +1,7 @@
 import React from "react";
 import './ExersiseDetails.css'
 
-const ExersiseDetails = ({cart}) => {
+const ExersiseDetails = ({cart,breakTime}) => {
   let totalTime = 0;
   for(const item of cart){
     totalTime = totalTime + parseFloat(item.time);
@@ -15,7 +15,7 @@ const ExersiseDetails = ({cart}) => {
       </div>
       <div className="break">
         <p>Break Time</p>
-        <p>200 sec</p>
+        <p>{breakTime} sec</p>
       </div>
     </section>
   );

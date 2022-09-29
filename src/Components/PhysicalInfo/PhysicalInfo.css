@@ -1,7 +1,7 @@
 .info-box{
     display: flex;
     justify-content: space-between;
-    border: 2px solid orangered;
+    border: 2px solid #7510F6;
     padding: 8px;
     border-radius: 8px;
 }

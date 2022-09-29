@@ -6,8 +6,8 @@ nav{
     height: 60px;
     width: 60px;
 }
-.nav-tag p{
+.nav-tag p, h2{
     font-size: 24px;
     font-weight: bold;
-    color: orangered;
+    color: #7510F6;
 }

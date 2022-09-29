@@ -1,8 +1,8 @@
 .exersise, .break{
     display: flex;
     justify-content: space-between;
-    border: 2px solid orangered;
-    margin: 8px;
+    border: 2px solid #7510F6;
+    margin: 8px 0;
     border-radius: 8px;
     padding: 8px;
 }
